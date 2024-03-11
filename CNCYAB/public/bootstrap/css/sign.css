@@ -1,0 +1,110 @@
+.sign_container {
+  width: 100%;
+  height: 700px;
+  background: url("../../Pic/home/bcb.jpg") center center no-repeat;
+  background-size: cover; }
+  .sign_container .sign_content {
+    width: 100%;
+    min-height: 680px;
+    background: url("../../SvgFile/sign.svg") center center no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    padding-top: 70px;
+    position: relative;
+    border-radius: 4px; }
+    .sign_container .sign_content .title_sign {
+      width: 35%;
+      height: 60px;
+      margin-right: 10%;
+      margin-bottom: 30px; }
+      .sign_container .sign_content .title_sign .nav_tabs {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        list-style-type: none; }
+        .sign_container .sign_content .title_sign .nav_tabs .nav_item {
+          width: 50%;
+          height: inherit;
+          text-align: center;
+          line-height: 60px; }
+          .sign_container .sign_content .title_sign .nav_tabs .nav_item .nav_link {
+            color: #6d6d6d;
+            padding: 0;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer; }
+          .sign_container .sign_content .title_sign .nav_tabs .nav_item .button_tab1 {
+            color: #3b7ab0; }
+          .sign_container .sign_content .title_sign .nav_tabs .nav_item .nav_link:hover {
+            border: none;
+            color: #5cb85c; }
+    .sign_container .sign_content .sign_content_part {
+      width: 45%;
+      height: auto;
+      margin-right: 13%; }
+      .sign_container .sign_content .sign_content_part .tab_content {
+        width: 100%;
+        height: 100%; }
+        .sign_container .sign_content .sign_content_part .tab_content h5 {
+          color: #323232;
+          padding-right: 7%; }
+        .sign_container .sign_content .sign_content_part .tab_content p {
+          color: #777777;
+          font-size: 13px;
+          padding-right: 7%; }
+        .sign_container .sign_content .sign_content_part .tab_content .form_sign_content {
+          width: 70%;
+          height: auto;
+          margin-right: 15%;
+          text-align: left; }
+          .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form {
+            box-shadow: 3px 3px 10px #e2e2e2 ,-3px -3px 10px #e2e2e2;
+            padding: 2%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            height: auto; }
+            .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group {
+              text-align: right;
+              margin-bottom: 5px;
+              position: relative; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group .wrong_text {
+                font-size: 11px; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group .icon_sign {
+                position: absolute;
+                right: 10px;
+                bottom: 10px; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group a {
+                font-size: 13px;
+                color: #3b7ab0; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group label {
+                font-size: 13px;
+                color: #aeb3b9; }
+                .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group label span {
+                  margin-right: 19px;
+                  line-height: 23px; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group .form-control {
+                height: 35px;
+                transition: all 0.2s ease;
+                text-align: left;
+                direction: ltr;
+                font-size: 14px; }
+              .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group .form-control:focus {
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid #3b7ab0; }
+            .sign_container .sign_content .sign_content_part .tab_content .form_sign_content .border_form .form-group-captcha {
+              height: 65px;
+              margin-top: 10px; }
+          .sign_container .sign_content .sign_content_part .tab_content .form_sign_content button {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+            background-color: #3b7ab0;
+            margin-top: 10px;
+            border-radius: 40px; }
+        .sign_container .sign_content .sign_content_part .tab_content .fade {
+          display: none; }
+
+/*# sourceMappingURL=sign.css.map */

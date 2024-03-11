@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>نمایش فرصت شغلی</title>
+    <!--BootStrap-->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap-grid.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="public/bootstrap/css/custom.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="public/FontAwesome_5/css/fontawesome-all.min.css">
+    <!--Flag Icon-->
+    <link rel="stylesheet" href="public/FlagIcon/css/flag-icon.min.css">
+    <!--Slick Carousel-->
+    <link rel="stylesheet" type="text/css" href="public/slick_1_8_1/slick.css">
+    <link rel="stylesheet" type="text/css" href="public/slick_1_8_1/slick-theme.css">
+    <!--Media-->
+    <link rel="stylesheet" href="public/bootstrap/css/media.css">
+</head>
+
+<body onload="loadMap()">
+
+<section class="container-fluid">
+    <section class="row">
+        <!--Header Web site-->
+        <header class="header">
+            <!--Flag Country & Sign User & Shopping Basket-->
+            <section class="country_sign_basket d-flex">
+                <section class="country_part">
+                    <p id="country_p"><span class="flag-icon flag-icon-ir mr-1"></span>Fa<span class="fas fa-angle-down ml-1 span_second"></span></p>
+                    <section class="show_another_country">
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                    </section>
+                </section>
+                <section class="sign_part">
+                    <a id="sign_part">ورود و ثبت نام <img src="public/SvgFile/user.svg"></a>
+                    <section class="show_sign_part">
+                        <a class="btn btn1 " href="">ورود به حساب کاربری</a>
+                        <a class="btn btn2 " href="">خروج از حساب کاربری</a>
+                    </section>
+                </section>
+                <section class="basket_part">
+                    <a href="">سبد خرید <img src="public/SvgFile/basket.svg"></a>
+                    <span>1</span>
+                </section>
+            </section>
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-md navbar-dark p-0">
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler mr-3 bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Brand -->
+                <section class="navbar-brand mr-0 p-0">
+                    <a href="index.html">CNC<span>YAB</span></a>
+                    <p>مرکز خرید و فروش انواع ماشین آلات CNC</p>
+                </section>
+                <!-- Navbar links -->
+                <section class="collapse navbar-collapse menu_site" id="collapsibleNavbar">
+                    <ul class="navbar-nav  p-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">صفحه اصلی</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link">ماشین آلات CNC</a>
+                            <section class="line_menu"></section>
+                            <ul class="ul_child1">
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات پردازش فلز <span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media" >ماشین آلات پردازش فلز <span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> ورق فلز کار</a></li>
+                                        <li class="li_child2"><a href="list.html">تجهیزات جانبی </a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات</a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات</a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات فرز </a></li>
+                                        <li class="li_child2"><a href="list.html">دستگاه های سنگ زنی </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات نجاری<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات نجاری<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> اره </a></li>
+                                        <li class="li_child2"><a href="list.html"> لبه خم ماشین آلات </a></li>
+                                        <li class="li_child2"><a href="list.html">ساندرز </a></li>
+                                        <li class="li_child2"><a href="list.html">فرز  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات چاپ<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات چاپ<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> پست پرس</a></li>
+                                        <li class="li_child2"><a href="list.html">ماشین چاپ افست  </a></li>
+                                        <li class="li_child2"><a href="list.html">ماشین آلات صحافی کتاب  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">فن آوری اتوماسیون صنعتی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">فن آوری اتوماسیون صنعتی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> موتورهای الکتریکی </a></li>
+                                        <li class="li_child2"><a href="list.html"> تسمه نقاله </a></li>
+                                        <li class="li_child2"><a href="list.html">پمپ </a></li>
+                                        <li class="li_child2"><a href="list.html">رول نوار نقاله  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات ساختمانی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات ساختمانی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html">ژنراتور  </a></li>
+                                        <li class="li_child2"><a href="list.html"> بیل</a></li>
+                                        <li class="li_child2"><a href="list.html"> لودر</a></li>
+                                        <li class="li_child2"><a href="list.html"> درمان روش & گچ بتن </a></li>
+                                        <li class="li_child2"><a href="list.html"> لیفتراک های گاز</a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">بالابرها<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">بالابرها<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html">لیفتراک های برقی  </a></li>
+                                        <li class="li_child2"><a href="list.html">لیفتراک های دیزلی  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1"><a href="list.html">ماشین آلات صنایع غذایی </a></li>
+                                <li class="li_child1"><a href="list.html">فناوری اتوماسیون  </a></li>
+                                <li class="li_child1"><a href="list.html">انتقال مواد </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_link_sell" href="">فروش دستگاه</a>
+                            <section class="line_menu"></section>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_link_buy" href="">خرید دستگاه</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">خدمات</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_job.html">استخدام</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">درباره ما</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item nav_item_last">
+                            <a class="nav-link " href="">تماس با ما</a>
+                            <section class="line_menu"></section>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <!--Search-->
+        <section class="search">
+            <form  class="search_form" method="post" action="">
+                <input type="text" id="search_form" class="form-control" placeholder="نام دستگاه یا عنوان مورد نظر را وارد کنیید">
+                <button type="submit" class="btn btn-primary">جستجو</button>
+                <section class="search_detail">
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                </section>
+            </form>
+        </section>
+
+        <section class="wrapper_shop">
+            <section class="show_product_category">
+                <ul class="list-inline">
+                    <li class="list-inline-item list-inline-item-first"><img src="public/SvgFile/white_home.svg" alt=""></li>
+                    <li class="list-inline-item list-inline-item-first"><a href="#">آگهی های شغلی</a></li>
+                    <li class="list-inline-item"><a href="#">اپراتور های CNC مدل خفن</a></li>
+                    <li class="list-inline-item list-inline-item-last"><a href="#">استخدام اپراتور های CNC </a></li>
+                </ul>
+
+            </section>
+            <section class="single_job_content">
+                <section class="title_single_job d-flex justify-content-between">
+                    <section class="single_job_img">
+                        <img src="public/Pic/ListJob/LG.jpg" class="w-100 h-100 img-fluid d-block mx-auto" alt="">
+                    </section>
+                    <section class="single_job_description">
+                        <section class="single_job_description_title d-flex justify-content-between">
+                            <h6>استخدام اپراتور دستگاه CNC</h6>
+                            <p>دوشنبه 22 خرداد 98</p>
+                        </section>
+                        <section class="single_job_description_company">
+                            <p>سپهر اندیشان پاسارگارد</p>
+                        </section>
+                        <section class="single_job_description_website">
+                            <a href="" target="_blank">www.sepehrandishan.com</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="about_single_job">
+                    <ul class="about_single_job_ul">
+                        <li class="about_single_job_li">نوع همکاری :<span>تمام وقت / پاره وقت</span></li>
+                        <li class="about_single_job_li">جنسیت :<span>مرد</span></li>
+                        <li class="about_single_job_li">میزان سابقه کار مورد نیاز :<span>2 الی 5 سال</span></li>
+                        <li class="about_single_job_li">حقوق :<span>2 الی 5 میلیون تومان</span></li>
+                        <li class="about_single_job_li w-100">وضعیت نظام وظیفه :<span>مهم نیست</span></li>
+                        <li class="about_single_job_li w-100">محل کار :<span>تهران / پاکدشت ..............</span></li>
+                    </ul>
+                </section>
+                <section class="need_single_job">
+                    <section class="what_need_job">
+                        <h6>شرح موقعیت شغلی : </h6>
+                        <p>طراح UI , UX موبایل اپلیکیشن و وب سایت :</p>
+                        <p>سابقه طراحی محصول ( رابط و تجربه کاربری ) با محوریت موبایل</p>
+                    </section>
+                    <section class="what_need_job">
+                        <h6>مهارت های مورد نیاز : </h6>
+                        <p>Adobe XD</p>
+                        <p>PhotoShop</p>
+                        <p>Corel Draw</p>
+                    </section>
+                    <section class="what_need_job">
+                        <h6>معرفی شرکت </h6>
+                        <p>پارت با تکیه بر گروهی از بهترین متخصصین حوزه‌ی مالی و فناوری اطلاعات کشور، می‌کوشد زمینه‌ساز ارائه خدماتی نوین در بازار سرمایه ایران باشد. بدین منظور طراحی و انتشار شاخص‌ها و معیارهایی برای سنجش بهتر موقعیت‌های سرمایه‌گذاری در بازار سرمایه ایران، طراحی و پیاده سازی نرم افزارهای قدرتمند بر پایه‌ی اطلاعات مالی و ایجاد بانک اطلاعات جامع مالی به منظور گردآوری و پردازش داده‌های اثرگذار بر تصمیم سرمایه‌گذاران از اهداف اصلی پارت می باشند.</p>
+                    </section>
+                    <section class="link_rezome">
+                        <a href="" class="btn btn-primary">ارسال درخواست</a>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="wrapper_shop1">
+            <footer class="footer">
+                <section class="contact_us">
+                    <section class="row m-0">
+                        <section class="col-sm-4 col-12 p-0 contact_us_part">
+                            <h6><span class="fas fa-square"></span>تماس با ما</h6>
+                            <p><span class="fas fa-map-marker-alt"></span>تهران ; میدان رسالت ; 100 متر به طرف شرق بعد از خیابان سامان نبش خیابان غیبی پلاک 700 طبقه پنجم واحد 4 زنگ 504 </p>
+                            <p><span class="fas fa-phone "></span>021 77194419</p>
+                            <p><span class="fas fa-envelope"></span>info@cncyab.com</p>
+                        </section>
+                        <section id="sample" class="col-sm-8 col-12 contact_us_part contact_us_part_map">
+
+                        </section>
+                    </section>
+                </section>
+                <section class="last_footer">
+                    <section class="row m-0">
+                        <section class="col-lg-2 col-md-6 col-sm-6 col-12 last_footer_part">
+                            <h6><span class="fas fa-square"></span>تماس با ما</h6>
+                            <span class="liner"></span>
+                            <p>&nbsp;در این قسمت توضیح خلاصه در مورد شرکت خود می آورید از این قسمت به صفحه درباره ما می روند . در این قسمت توضیحی خلاصه در باره شرکت خود می آورید ...</p>
+                            <a href="">بیشتر بخوانید<span class="fas fa-angle-double-left"></span></a>
+                        </section>
+                        <section class="col-lg-2 col-md-6 col-sm-6 col-12 last_footer_part">
+                            <h6><span class="fas fa-square"></span>لینک های مربوط</h6>
+                            <span class="liner"></span>
+                            <a href="" class="conect_link">&nbsp;&nbsp;عنوان مورد نظر</a>
+                            <a href="" class="conect_link"><strong>عنوان تیتر مورد نظر</strong></a>
+                            <a href="" class="conect_link">عنوان مورد نظر</a>
+                            <a href="" class="conect_link">عنوان تیتر مورد نظر</a>
+                            <a href="" class="conect_link">عنوان  مورد نظر</a>
+                            <a href="" class="conect_link">عنوان تیتر مورد نظر</a>
+
+                        </section>
+                        <section class="col-lg-4 col-md-6 col-sm-6 col-12 last_footer_part last_footer_part1">
+                            <h6><span class="fas fa-square"></span>خبر نامه</h6>
+                            <span class="liner"></span>
+                            <p>&nbsp;&nbsp;طرح نما یا لورم ایپسم به معنی متنی آزمایشی و بی معنی در صنعت چاپ و کلمات بی معنی که در صنعت چاپ از آن استفاده میشود . در واقع کلمات بی معنی هستند جهت پر کردن فضای خای کاربرد داشته</p>
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="ایمیل خود را وارد نمایید">
+                                <button type="submit" class="btn btn_submit">ثبت</button>
+                            </form>
+                        </section>
+                        <section class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0  last_footer_part last_footer_part_end">
+                            <a class="namad_link" href="">
+                                <img src="public/SvgFile/namad.svg" alt="">
+                            </a>
+                            <section class="social_icon">
+                                <section class="row m-0 justify-content-center">
+                                    <h3 class="fab fa-telegram"></h3>
+                                    <h3 class="fab fa-instagram"></h3>
+                                    <h3 class="fab fa-linkedin"></h3>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+        </section>
+        <!--Upper-->
+        <section class="upper">
+            <img class="show_support mx-auto d-block" src="public/SvgFile/cooment.svg">
+        </section>
+        <!--Support Team-->
+        <section class="support_team">
+            <audio id="myAudio">
+                <source src="public/audio/slow-spring-board.ogg" type="audio/ogg">
+                <source src="public/audio/slow-spring-board.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <section class="support_team_title d-flex">
+                <img src="public/Pic/other/customer_servic.jpg">
+                <p>نیاز به کمک دارید</p>
+                <span class="close_support fas fa-times text-danger"></span>
+            </section>
+            <section class="support_team_form">
+                <form method="post" action="/action_page.php">
+                    <div class="form-group">
+                        <label for="fullname">نام و نام خوانوادگی :</label>
+                        <input type="text" class="form-control" id="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ایمیل کاربری :</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="needs">نمیدونم متن :</label>
+                        <textarea class="form-control" id="needs" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="radios btn btn-primary">ثبت درخواست</button>
+                </form>
+            </section>
+        </section>
+        <!--Modal Request-->
+        <section class="modal_request">
+            <section class="modal_request_body">
+                <section class="modal_request_title d-flex justify-content-between" >
+                    <p>فرم درخواست ارسال آگهی</p>
+                    <p class="close_slide close_modal_request fas fa-times-circle text-danger"></p>
+                </section>
+                <section class="request_form">
+                    <form method="post" action="/action_page.php">
+                        <div class="form-group">
+                            <label for="subject"><span class="fas fa-circle"></span>عنوان درخواست :</label>
+                            <input type="text" class="form-control" id="subject" placeholder="درخواست خود را بنویسید">
+                        </div>
+                        <div class="form-group">
+                            <label for="description"><span class="fas fa-circle"></span>توضیحات :</label>
+                            <textarea class="form-control" id="description" rows="4" placeholder=" توضیح مختصری از آگهی دستگاه بیاورید ( بیش از 500 کاراکتر نباشد )"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><span class="fas fa-circle"></span>شماره تماس :</label>
+                            <input type="text" class="form-control" id="phone" placeholder="09">
+                        </div>
+                        <section class="inline_input d-flex justify-content-between">
+                            <div class="form-group form_group_size">
+                                <label for="min_price"><span class="fas fa-circle"></span>حداقل قیمت :</label>
+                                <input type="text" class="form-control" id="min_price" placeholder="قیمت پیشنهادی حداقل">
+                            </div>
+                            <div class="form-group form_group_size">
+                                <label for="max_price"><span class="fas fa-circle"></span>حداکثر قیمت :</label>
+                                <input type="text" class="form-control" id="max_price" placeholder="قیمت پیشنهادی حداکثر" >
+                            </div>
+                        </section>
+                        <span class="close_slide radios radios_1 btn btn-light">لغو درخواست</span>
+                        <button type="submit" class="radios radios_2 btn btn-primary">ثبت درخواست</button>
+                        <span class="close_slide radios radios_1 radios_1_media btn btn-light">لغو درخواست</span>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
+
+<!--JS WebSite-->
+<script src="public/bootstrap/js/jquery_min.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/slick_1_8_1/slick.min.js"></script>
+<script src ="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOGEVA5JqS4jc4SS9aWBuVb3oJtbdK8Ko"></script>
+<script src="public/bootstrap/js/main.js"></script>
+<!--Menu-->
+<script src="public/bootstrap/js/menu.js"></script>
+<!--Support-->
+<script src="public/bootstrap/js/support.js"></script>
+<!--Modal Request-->
+<script src="public/bootstrap/js/modal_request.js"></script>
+<!---->
+</body>
+</html>

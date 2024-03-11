@@ -1,0 +1,82 @@
+@import "Variables";
+@mixin size($x,$y){
+  width: $x;
+  height: $y;
+}
+@mixin padding($x){
+  padding: $x+px;
+  box-sizing: border-box;
+}
+@mixin transition($x){
+  transition: all $x+s ease;
+}
+@mixin links{
+  font-size: 14px;
+  border-radius: 40px;
+  line-height: 30px;
+  width: 170px;
+}
+@mixin title{
+  @include size(100%,50px);
+}
+@mixin icon_title{
+  height: 50px;
+  img{
+    @include size(60%,inherit);
+    margin-left: 20%;
+  }
+}
+@mixin text_title{
+  height: 40px;
+  border-bottom: 1px dashed $Border;
+  h5{
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    color: $Black;
+    text-align: right;
+  }
+}
+@mixin box_shadow($x,$y,$z,$x1,$y1){
+  box-shadow: $x+px $y+px $z+px #f7f7f7 ,$x1+px $y1+px $z+px #f7f7f7;
+}
+@mixin offer{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  @include size(110px,30px);
+  background-color: #f53b3d;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+@mixin MediaQuery($Input){
+  @if($Input==$Large){
+    @media (min-width: 1200px) {
+      @content
+    }
+  }
+  @else if($Input==$Medium){
+    @media (min-width: 990px) and (max-width: 1200px){
+      @content
+    }
+  }
+  @else if($Input==$Small){
+    @media (min-width: 768px) and (max-width: 990px){
+      @content
+    }
+  }
+  @else if($Input==$XSmall){
+    @media (min-width: 560px) and (max-width: 768px){
+      @content
+    }
+  }
+  @else{
+    @media (max-width: 560px){
+      @content
+    }
+  }
+}
