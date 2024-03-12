@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>لیست فروشگاه</title>
+    <!--BootStrap-->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap-grid.min.css">
+    <!---->
+    <!---->
+    <link rel="stylesheet" href="public/Semantic-UI-master/dist/semantic.css">
+    <!--Style-->
+    <link rel="stylesheet" href="public/bootstrap/css/custom.css">
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="public/FontAwesome_5/css/fontawesome-all.min.css">
+    <!--Flag Icon-->
+    <link rel="stylesheet" href="public/FlagIcon/css/flag-icon.min.css">
+    <!--Slick Carousel-->
+    <link rel="stylesheet" type="text/css" href="public/slick_1_8_1/slick.css">
+    <link rel="stylesheet" type="text/css" href="public/slick_1_8_1/slick-theme.css">
+    <!---->
+    <link rel="stylesheet" href="public/rage_price/jquery-ui.css">
+
+    <!--Media-->
+    <link rel="stylesheet" href="public/bootstrap/css/media.css">
+</head>
+
+<body onload="loadMap()">
+
+<section class="container-fluid">
+    <section class="row">
+        <!--Header Web site-->
+        <header class="header">
+            <!--Flag Country & Sign User & Shopping Basket-->
+            <section class="country_sign_basket d-flex">
+                <section class="country_part">
+                    <p id="country_p"><span class="flag-icon flag-icon-ir mr-1"></span>Fa<span class="fas fa-angle-down ml-1 span_second"></span></p>
+                    <section class="show_another_country">
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ir "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-ga "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-gb "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                        <a class="d-inline-block" href=""><span class="flag-icon flag-icon-eg "></span></a>
+                    </section>
+                </section>
+                <section class="sign_part">
+                    <a id="sign_part">ورود و ثبت نام <img src="public/SvgFile/user.svg"></a>
+                    <section class="show_sign_part">
+                        <a class="btn btn1 " href="">ورود به حساب کاربری</a>
+                        <a class="btn btn2 " href="">خروج از حساب کاربری</a>
+                    </section>
+                </section>
+                <section class="basket_part">
+                    <a href="">سبد خرید <img src="public/SvgFile/basket.svg"></a>
+                    <span>1</span>
+                </section>
+            </section>
+            <!--Navigation-->
+            <nav class="navbar navbar-expand-md navbar-dark p-0">
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler mr-3 bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Brand -->
+                <section class="navbar-brand mr-0 p-0">
+                    <a href="index.html">CNC<span>YAB</span></a>
+                    <p>مرکز خرید و فروش انواع ماشین آلات CNC</p>
+                </section>
+                <!-- Navbar links -->
+                <section class="collapse navbar-collapse menu_site" id="collapsibleNavbar">
+                    <ul class="navbar-nav  p-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">صفحه اصلی</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a id="nav-link" class="nav-link">ماشین آلات CNC</a>
+                            <section class="line_menu"></section>
+                            <ul class="ul_child1">
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات پردازش فلز <span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media" >ماشین آلات پردازش فلز <span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> ورق فلز کار</a></li>
+                                        <li class="li_child2"><a href="list.html">تجهیزات جانبی </a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات</a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات</a></li>
+                                        <li class="li_child2"><a href="list.html"> ماشین آلات فرز </a></li>
+                                        <li class="li_child2"><a href="list.html">دستگاه های سنگ زنی </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات نجاری<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات نجاری<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> اره </a></li>
+                                        <li class="li_child2"><a href="list.html"> لبه خم ماشین آلات </a></li>
+                                        <li class="li_child2"><a href="list.html">ساندرز </a></li>
+                                        <li class="li_child2"><a href="list.html">فرز  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات چاپ<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات چاپ<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> پست پرس</a></li>
+                                        <li class="li_child2"><a href="list.html">ماشین چاپ افست  </a></li>
+                                        <li class="li_child2"><a href="list.html">ماشین آلات صحافی کتاب  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">فن آوری اتوماسیون صنعتی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">فن آوری اتوماسیون صنعتی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html"> موتورهای الکتریکی </a></li>
+                                        <li class="li_child2"><a href="list.html"> تسمه نقاله </a></li>
+                                        <li class="li_child2"><a href="list.html">پمپ </a></li>
+                                        <li class="li_child2"><a href="list.html">رول نوار نقاله  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">ماشین آلات ساختمانی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">ماشین آلات ساختمانی<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html">ژنراتور  </a></li>
+                                        <li class="li_child2"><a href="list.html"> بیل</a></li>
+                                        <li class="li_child2"><a href="list.html"> لودر</a></li>
+                                        <li class="li_child2"><a href="list.html"> درمان روش & گچ بتن </a></li>
+                                        <li class="li_child2"><a href="list.html"> لیفتراک های گاز</a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1">
+                                    <a class="li_child1_link" href="list.html">بالابرها<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <a class="li_child1_link_media">بالابرها<span class="icon_menu fas fa-angle-left"></span></a>
+                                    <ul class="ul_child2">
+                                        <li class="li_child2"><a href="list.html">لیفتراک های برقی  </a></li>
+                                        <li class="li_child2"><a href="list.html">لیفتراک های دیزلی  </a></li>
+                                        <li class="li_child2 li_child2_al_media"><a href="list.html"><span class="fas fa-plus-circle"></span>همه موارد</a></li>
+                                    </ul>
+                                </li>
+                                <li class="li_child1"><a href="list.html">ماشین آلات صنایع غذایی </a></li>
+                                <li class="li_child1"><a href="list.html">فناوری اتوماسیون  </a></li>
+                                <li class="li_child1"><a href="list.html">انتقال مواد </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_link_sell" href="">فروش دستگاه</a>
+                            <section class="line_menu"></section>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_link_buy" href="">خرید دستگاه</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">خدمات</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="list_job.html">استخدام</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">درباره ما</a>
+                            <section class="line_menu"></section>
+                        </li>
+                        <li class="nav-item nav_item_last">
+                            <a class="nav-link " href="">تماس با ما</a>
+                            <section class="line_menu"></section>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+
+
+        </header>
+        <!--Search-->
+        <section class="search">
+            <form  class="search_form" method="post" action="">
+                <input type="text" id="search_form" class="form-control" placeholder="نام دستگاه یا عنوان مورد نظر را وارد کنیید">
+                <button type="submit" class="btn btn-primary">جستجو</button>
+                <section class="search_detail">
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part">
+                        <a href="">این متن آزمایشی می باشد</a>
+                    </section>
+                    <section class="search_part search_part_stript">
+                        <a href="">این متن 1 آزمایشی می باشد</a>
+                    </section>
+                </section>
+            </form>
+        </section>
+        <!--Wrapper-->
+        <section class="wrapper_shop">
+            <!--There Category-->
+            <section class="there_category">
+                <section class="row m-0">
+                    <section class="col-sm-4 col-12 mt-sm-0 mt-0 there_category_part">
+                        <a class="d-block w-100 h-100" href="single.html">
+                            <img class="w-100 h-100 card-img" src="public/Pic/special/fd.jpg" alt="">
+                        </a>
+                    </section>
+                    <section class="col-sm-4 col-12 mt-sm-0 mt-4 there_category_part">
+                        <a class="d-block w-100 h-100" href="single.html">
+                            <img class="w-100 h-100 card-img" src="public/Pic/special/fd.jpg" alt="">
+                        </a>
+                    </section>
+                    <section class="col-sm-4 col-12 mt-sm-0 mt-4 there_category_part ">
+                        <a class="d-block w-100 h-100" href="single.html">
+                            <img class="w-100 h-100 card-img" src="public/Pic/special/fd.jpg" alt="">
+                        </a>
+                    </section>
+                </section>
+            </section>
+            <!--Special Ticket-->
+            <section class="special_ticket">
+                <section class="content_special">
+                    <section class="row m-0 owl_carousel_last">
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                        <section class=" compare_products_part">
+                            <section class="compare_image_title">
+                                <section class="compare_image">
+                                    <img src="public/Pic/1.jpg" class="w-100 h-100 rounded" alt="">
+                                </section>
+                                <section class="compare_title_price">
+                                    <section class="compare_title_part d-flex">
+                                        <span class="line"></span>
+                                        <p>نام محصول مورد نظر اینجا میاید</p>
+                                    </section>
+                                    <section class="compare_price d-flex justify-content-between">
+                                        <p class="p_last_go"><span class=" far fa-clock"></span>3 ساعت پیش</p>
+                                        <p class="p_price"><span>999.000.000</span>ت</p>
+                                    </section>
+                                </section>
+                                <p class="offer">15% <span>تخفیف</span></p>
+                                <p class="offer offer_blue">تخفیف ویژه</p>
+                                <p class="offer offer_green">فوری</p>
+                                <a href="single.html"></a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <!--List Product-->
+            <section class="list_product">
+                <section class="row m-0 justify-content-between">
+                    <section class="list_products list_product_filter_right">
+                        <section class="close_filter d-flex">
+                            <span class="fas fa-times"></span>
+                            <p> بستن پنجره</p>
+                        </section>
+                        <form action="/action_page.php">
+                            <section class="form_list_product">
+                                <h6>مشخصات دستگاه</h6>
+                                <section class="form-group">
+                                    <label for="input1">نوع دستگاه :</label>
+                                    <input type="text" class="form-control" id="input1">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input2">نام دستگاه :</label>
+                                    <input type="text" class="form-control" id="input2">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input3">وضعیت دستگاه :</label>
+                                    <select name="" id="input3" class="form-control">
+                                        <option value="">همه موارد</option>
+                                        <option value="">کارکرده</option>
+                                        <option value="">نو</option>
+                                    </select>
+                                </section>
+                                <section class="form-group">
+                                    <label for="input4">سال ساخت :</label>
+                                    <input type="text" class="form-control" id="input4">
+                                </section>
+                                <section class="form-group">
+                                    <label for="multi-select">کشور سازنده :</label>
+                                    <select name="states" class=" ui selection dropdown" id="multi-select" multiple="">
+                                        <option value="">States</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+
+
+                                </section>
+                                <section class="form-group">
+                                    <label for="input6">نام کنترل :</label>
+                                    <input type="text" class="form-control" id="input6">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input7">تعداد محور :</label>
+                                    <input type="text" class="form-control" id="input7">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input8">کورس محور <span>x</span></label>
+                                    <input type="text" class="form-control" id="input8" placeholder="mm">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input9">کورس محور <span>y</span></label>
+                                    <input type="text" class="form-control" id="input9" placeholder="mm">
+                                </section>
+                                <section class="form-group">
+                                    <label for="input10">کورس محور <span>z</span></label>
+                                    <input type="text" class="form-control" id="input10" placeholder="mm">
+                                </section>
+                                <h6 class="h6_second">قیمت دستگاه</h6>
+                                <section class="form-group">
+                                    <label class="label_price">حداقل و حداکثر قیمت را تعیین کنید</label>
+                                    <section class="show_price"></section>
+                                    <section class="box_prices d-flex justify-content-around">
+                                        <p><span id="price_max">5000</span>تومان</p>
+                                        <p><span id="price_min">1000</span>تومان</p>
+                                    </section>
+                                </section>
+                            </section>
+                            <button type="submit" class="btn_form_filter btn-block btn btn-success">جستجو</button>
+                        </form>
+                    </section>
+                    <section class="list_products list_product_left">
+                        <section class="list_product_left_title">
+                        <section class="row m-0 justify-content-around">
+                            <p onclick="ShowMenu()" class="btn_limit">فیلتر محصولات</p>
+                            <p>دستگاه های سی ان سی KHD1452 </p>
+                            <section class="how_visit">
+                                <select class="how_visit_select form-control" id="sel1">
+                                    <option value="">ترتیب بر اساس :</option>
+                                    <option value="">جدید ترین ها</option>
+                                    <option value="">پر بازدید ها</option>
+                                </select>
+                            </section>
+                        </section>
+                    </section>
+                        <section class="list_product_left_content">
+                            <section class="row m-0">
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                                <section class="col-lg-4 col-sm-6 list_product_left_box">
+                                    <img class="card-img" src="public/Pic/home/bcb.jpg" alt="">
+                                    <section class="text_list_product">
+                                        <span class="line_special"></span>
+                                        <p>
+                                            عنوان مورد نضر اینجا میاید </p>
+                                    </section>
+                                    <section class="price_time">
+                                        <section class="row m-0">
+                                            <section class="col-6 p-0">
+                                                <p><span class="icon_clock far fa-clock"></span>5 ساعت پیش</p>
+                                            </section>
+                                            <section class="col-6 p-0">
+                                                <p class="prices">157.000.000 <span>ت</span></p>
+                                            </section>
+
+                                        </section>
+                                    </section>
+                                    <p class="offer">15% <span>تخفیف</span></p>
+                                    <p class="offer offer_blue">تخفیف ویژه</p>
+                                    <p class="offer offer_green">فوری</p>
+                                    <a href="single.html"></a>
+                                </section>
+                            </section>
+                            <section class="pagination_part">
+                                <section class="row m-0 justify-content-around">
+                                    <ul class="pagination">
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                    </ul>
+                                    <section class="next_btn">
+                                        <div class="btn-group">
+                                            <a href="" class="btn btn-primary"><span class="fas fa-angle-right"></span></a>
+                                            <a href="" class="btn btn-primary"><span class="fas fa-angle-double-right"></span></a>
+                                        </div>
+                                    </section>
+                                    <section class="show_all_rows">
+                                        <p>تعداد کل نتایج <span>235</span></p>
+                                    </section>
+                                </section>
+
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+        <!--Wrapper1-->
+        <section class="wrapper_shop1">
+            <footer class="footer">
+                <section class="contact_us">
+                    <section class="row m-0">
+                        <section class="col-sm-4 col-12 p-0 contact_us_part">
+                            <h6><span class="fas fa-square"></span>تماس با ما</h6>
+                            <p><span class="fas fa-map-marker-alt"></span>تهران ; میدان رسالت ; 100 متر به طرف شرق بعد از خیابان سامان نبش خیابان غیبی پلاک 700 طبقه پنجم واحد 4 زنگ 504 </p>
+                            <p><span class="fas fa-phone"></span>021 77194419</p>
+                            <p><span class="fas fa-envelope"></span>info@cncyab.com</p>
+                        </section>
+                        <section id="sample" class="col-sm-8 col-12 contact_us_part contact_us_part_map">
+
+                        </section>
+                    </section>
+                </section>
+                <section class="last_footer">
+                    <section class="row m-0">
+                        <section class="col-lg-2 col-md-6 col-sm-6 col-12 last_footer_part">
+                            <h6><span class="fas fa-square"></span>تماس با ما</h6>
+                            <span class="liner"></span>
+                            <p>&nbsp;در این قسمت توضیح خلاصه در مورد شرکت خود می آورید از این قسمت به صفحه درباره ما می روند . در این قسمت توضیحی خلاصه در باره شرکت خود می آورید ...</p>
+                            <a href="">بیشتر بخوانید<span class="fas fa-angle-double-left"></span></a>
+                        </section>
+                        <section class="col-lg-2 col-md-6 col-sm-6 col-12 last_footer_part">
+                            <h6><span class="fas fa-square"></span>لینک های مربوط</h6>
+                            <span class="liner"></span>
+                            <a href="" class="conect_link">&nbsp;&nbsp;عنوان مورد نظر</a>
+                            <a href="" class="conect_link"><strong>عنوان تیتر مورد نظر</strong></a>
+                            <a href="" class="conect_link">عنوان مورد نظر</a>
+                            <a href="" class="conect_link">عنوان تیتر مورد نظر</a>
+                            <a href="" class="conect_link">عنوان  مورد نظر</a>
+                            <a href="" class="conect_link">عنوان تیتر مورد نظر</a>
+
+                        </section>
+                        <section class="col-lg-4 col-md-6 col-sm-6 col-12 last_footer_part last_footer_part1">
+                            <h6><span class="fas fa-square"></span>خبر نامه</h6>
+                            <span class="liner"></span>
+                            <p>&nbsp;&nbsp;طرح نما یا لورم ایپسم به معنی متنی آزمایشی و بی معنی در صنعت چاپ و کلمات بی معنی که در صنعت چاپ از آن استفاده میشود . در واقع کلمات بی معنی هستند جهت پر کردن فضای خای کاربرد داشته</p>
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="ایمیل خود را وارد نمایید">
+                                <button type="submit" class="btn btn_submit">ثبت</button>
+                            </form>
+                        </section>
+                        <section class="col-lg-4 col-md-6 col-sm-6 col-12 pl-0  last_footer_part last_footer_part_end">
+                            <a class="namad_link" href="">
+                                <img src="public/SvgFile/namad.svg" alt="">
+                            </a>
+                            <section class="social_icon">
+                                <section class="row m-0 justify-content-center">
+                                    <h3 class="fab fa-telegram"></h3>
+                                    <h3 class="fab fa-instagram"></h3>
+                                    <h3 class="fab fa-linkedin"></h3>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+        </section>
+        <!--Upper-->
+        <section class="upper">
+            <img class="show_support mx-auto d-block" src="public/SvgFile/cooment.svg">
+        </section>
+        <!--Support Team-->
+        <section class="support_team">
+            <audio id="myAudio">
+                <source src="public/audio/slow-spring-board.ogg" type="audio/ogg">
+                <source src="public/audio/slow-spring-board.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <section class="support_team_title d-flex">
+                <img src="public/Pic/other/customer_servic.jpg">
+                <p>نیاز به کمک دارید</p>
+                <span class="close_support fas fa-times text-danger"></span>
+            </section>
+            <section class="support_team_form">
+                <form method="post" action="/action_page.php">
+                    <div class="form-group">
+                        <label for="fullname">نام و نام خوانوادگی :</label>
+                        <input type="text" class="form-control" id="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ایمیل کاربری :</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="needs">نمیدونم متن :</label>
+                        <textarea class="form-control" id="needs" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="radios btn btn-primary">ثبت درخواست</button>
+                </form>
+            </section>
+        </section>
+        <!--Modal Request-->
+        <section class="modal_request">
+            <section class="modal_request_body">
+                <section class="modal_request_title d-flex justify-content-between" >
+                    <p>فرم درخواست ارسال آگهی</p>
+                    <p class="close_slide close_modal_request fas fa-times-circle text-danger"></p>
+                </section>
+                <section class="request_form">
+                    <form method="post" action="/action_page.php">
+                        <div class="form-group">
+                            <label for="subject"><span class="fas fa-circle"></span>عنوان درخواست :</label>
+                            <input type="text" class="form-control" id="subject" placeholder="درخواست خود را بنویسید">
+                        </div>
+                        <div class="form-group">
+                            <label for="description"><span class="fas fa-circle"></span>توضیحات :</label>
+                            <textarea class="form-control" id="description" rows="4" placeholder=" توضیح مختصری از آگهی دستگاه بیاورید ( بیش از 500 کاراکتر نباشد )"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><span class="fas fa-circle"></span>شماره تماس :</label>
+                            <input type="text" class="form-control" id="phone" placeholder="09">
+                        </div>
+                        <section class="inline_input d-flex justify-content-between">
+                            <div class="form-group form_group_size">
+                                <label for="min_price"><span class="fas fa-circle"></span>حداقل قیمت :</label>
+                                <input type="text" class="form-control" id="min_price" placeholder="قیمت پیشنهادی حداقل">
+                            </div>
+                            <div class="form-group form_group_size">
+                                <label for="max_price"><span class="fas fa-circle"></span>حداکثر قیمت :</label>
+                                <input type="text" class="form-control" id="max_price" placeholder="قیمت پیشنهادی حداکثر" >
+                            </div>
+                        </section>
+                        <span class="close_slide radios radios_1 btn btn-light">لغو درخواست</span>
+                        <button type="submit" class="radios radios_2 btn btn-primary">ثبت درخواست</button>
+                        <span class="close_slide radios radios_1 radios_1_media btn btn-light">لغو درخواست</span>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
+
+
+
+<!--JS WebSite-->
+<script src="public/bootstrap/js/jquery_min.js"></script>
+<script src="public/rage_price/jquery-ui.js"></script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/Semantic-UI-master/dist/semantic.min.js"></script>
+<script src="public/slick_1_8_1/slick.min.js"></script>
+<script src ="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOGEVA5JqS4jc4SS9aWBuVb3oJtbdK8Ko"></script>
+<!---->
+<script src="public/bootstrap/js/main.js"></script>
+<!--Menu-->
+<script src="public/bootstrap/js/menu.js"></script>
+<!--Support-->
+<script src="public/bootstrap/js/support.js"></script>
+<!--Modal Request-->
+<script src="public/bootstrap/js/modal_request.js"></script>
+<!---->
+<script>
+    //DropDown
+    $('#multi-select').dropdown();
+</script>
+
+</body>
+</html>
